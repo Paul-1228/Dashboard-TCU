@@ -1,0 +1,115 @@
+{% extends 'DW/main.html' %}
+
+{% block content %}
+    <div class="wrapper_index">
+        <div class="main">
+            <div class="bienvenida">
+                <h1>Bienvenidos</h1>
+                <p>En proceso de desarrollo</p>
+                <a href="/static/pdf/cronograma.pdf">
+                    <button class="cronograma">Cronograma</button>
+                </a>
+                <!--
+                <a download href="/static/pdf/cronograma.pdf">
+                    <button class="cronograma">Descargar cronograma</button>
+                </a>
+                -->
+            </div>
+            <div class="img_block">
+                <img src="/static/images/SF_Blanco.png" alt="Logo TCU: Troopicalización de la tecnología">
+            </div>
+        </div>
+    </div>
+
+    <div class="objetivos">
+        <img src="/static/images/imagen_objetivos.png" alt="imagen sobre desarrollo Web">
+
+        <div class="objetivos_texto">
+            <h2> Objetivos </h2>
+            <div class="divider">
+                <div class="divider_1"></div>
+                <div class="divider_2"></div>
+                <div class="divider_3"></div>
+            </div>
+            
+            <ol class="lista_objetivos">
+                <li><a> Gabo es feo </a></li>
+                <li><a> Andrés es playo </a></li>
+                <li><a> Laura es intensa </a></li>
+            </ol>
+            
+        </div>
+    </div>
+
+    <div class="archivos_web">
+        <div class="heading_web">
+            <h2> Portafolio de la página Web </h2>
+            <div class="divider">
+                <div class="divider_1"></div>
+                <div class="divider_2"></div>
+                <div class="divider_3"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card_img_position">
+                <div class="card_img"></div>
+                </div>
+                <div class="card_title">
+                    <h2>Archivos de la página web</h2>
+                </div>
+                <div class="card_project_link">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+
+    <div class="estudiantes">
+        <h2> Estudiantes </h2>
+        <div class="divider">
+            <div class="divider_1"></div>
+            <div class="divider_2"></div>
+            <div class="divider_3"></div>
+        </div>
+        <div class="cartas_estudiantes">
+            <div class="carta">
+                <img src="/static/images/gabo_face.jpg" alt="Foto de Gabriel Araya">
+                <div class="carta_info_estudiante">
+                    <h4> Gabriel Fernando Araya Mora </h4>
+                    <p> Estudiante de Ingeniería Eléctrica </p>
+                </div>
+            </div>
+            <div class="carta">
+                <img src="/static/images/paul_face.jpg" alt="Foto de Jean Paul González">
+                <div class="carta_info_estudiante">
+                    <h4> Jean Paul González Benavides </h4>
+                    <p> Estudiante de Ingeniería Eléctrica  </p>
+                </div>
+            </div>
+        </div>
+
+        <h2> Profesor Encargado </h2>
+        <div class="divider">
+            <div class="divider_1"></div>
+            <div class="divider_2"></div>
+            <div class="divider_3"></div>
+        </div>
+
+        <div class="cartas_estudiantes">
+            <div class="carta">
+                <img src="/static/images/helber_face.png" alt="Foto de Gabriel Araya">
+                <div class="carta_info_estudiante">
+                    <h4> Helber Meneses Navarro </h4>
+                    <p> Profesor de Ingeniería Eléctrica </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+{% endblock %}
