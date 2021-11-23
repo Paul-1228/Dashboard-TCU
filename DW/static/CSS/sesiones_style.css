@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    overflow-x: hidden;
+}
+
+.header_sesiones {
+    width: 100vw;
+    height: 80vh;
+    background: #B3FFAB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(178, 100%, 54%, 0.459), hsla(114, 100%, 84%, 0.61)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(178, 100%, 54%, 0.459), hsla(114, 100%, 84%, 0.61)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*.wrapper_sesiones_header {
+    width: 80vw;
+   
+}*/
+
+.sesiones_texto_header {
+    color: #111;
+    width: 50vw;
+    padding: 50px 50px;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.sesiones_texto_header h1 {
+    font-size: 70px;
+    display: flex;
+    margin: 0 50px;
+}
+
+.sesiones_texto_header h2 {
+    font-size: 30px;
+}
+
+.header_sesiones img {
+    width: 400px;
+    height: 400px;
+    grid-column: 5/10;
+    object-fit: cover;
+    border: none;
+    border-radius: 50px;
+}
+
+.wave {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+/* Videos */
+
+
+.videos {
+    background-color: #fff;
+}
+
+.videos_wrapper {
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.titulo-wrapper {
+    color: #111;
+    width: 60vh;
+    padding: 10px 20px;
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+}
+
+.titulo-wrapper h2 {
+    font-size: 2.5em;
+}
+
+.titulo-wrapper .divider{
+    justify-content: center;
+    align-content: center;
+}
+
+.video_galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.video-descripcion {
+    margin-top: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    /* border: 3px solid #3f3e3e; */
+    border: none;
+    border-radius: 20px;
+}
+
+.video-port img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+}
+
+.video-link {
+    margin-top: 20px;
+}
+
+.video-link a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #3f3e3e;
+    text-align: end;
+}
+
+.video-link a:hover{
+    background-color: #5fd8c4;
+    color: #3f3e3e;
+    transition: ease-in 0.4s;
+}
+
+.footer{
+    width: 100vw;
+    height: 12.5vh;
+    background-color: #3f3e3e;
+    color: #fff;
+}
+.footer_button{
+    float: right;
+}
