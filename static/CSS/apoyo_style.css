@@ -13,8 +13,8 @@ body {
 
 .apoyo {
     background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    display: flex;
+    flex-direction: row;
     width: 90vw;
     align-items: center;
     margin: 20px auto;
@@ -33,18 +33,21 @@ body {
     border-radius: 2px 20px 2px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
     margin-top: 50px;
+    margin-bottom:20px;
 }
 
 .texto-apoyo h4 {
     text-align: center;
     margin-top: 20px;
-    font-size: 40px;
+    font-size: clamp(15px, 1.5vw, 25px);
 }
 
 .apoyo img {
     display: flex;
     margin: 0 auto;
     align-content: center;
+    width: 80%; 
+    height: 100%;
 }
 
 .texto-apoyo i {
@@ -58,4 +61,26 @@ body {
 .texto-apoyo a {
     color: #8ef38e;
     text-decoration: none;
+}
+
+@media (max-width:1125px){
+    .apoyo {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .texto-apoyo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 120px;
+        justify-content: space-evenly;
+        border-radius: 2px 20px 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+        margin: 10px auto;
+        
+    }
+
 }
